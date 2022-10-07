@@ -137,10 +137,11 @@ console.log(sentence);
 console.log("\nEXERCISE 9");
 let newString = "Character";
 function cutString(str) {
-  const cutted = newString.slice(1, -1);
-  console.log(cutted);
+  return newString.slice(1, -1);
+  //   console.log(cutted);
 }
-cutString(newString);
+let cutted = cutString(newString);
+console.log(cutted);
 
 /* EXERCISE 10
  Write a function called "giveMeRandom" which accepts a number n and returns an array containing n random numbers between 0 and 10.
@@ -149,12 +150,11 @@ cutString(newString);
 /* WRITE YOUR ANSWER HERE */
 console.log("\nEXERCISE 10");
 function giveMeRandom(n) {
-  let randomArray = Array.from({ length: n }, () =>
-    Math.floor(Math.random() * 10)
-  );
-  console.log(randomArray);
+  return Array.from({ length: n }, () => Math.floor(Math.random() * 10));
+  //   console.log(randomArray);
 }
-giveMeRandom(33);
+let random = giveMeRandom(33);
+console.log(random);
 
 /* WHEN YOU ARE FINISHED
  Commit and push the code to your personal GitHub repository; then post the link of your commit on the Homework section of today's Eduflow.
